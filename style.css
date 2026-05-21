@@ -15,7 +15,7 @@ body {
 header {
     background-color: #111;
     padding: 15px 0;
-    border-bottom: 2px solid #D4AF37; /* Linha dourada elegante */
+    border-bottom: 2px solid #D4AF37; /* Linha dourada */
 }
 
 header ul {
@@ -31,7 +31,7 @@ header li {
 }
 
 header a {
-    color: #D4AF37; /* Texto dourado */
+    color: #D4AF37;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -39,7 +39,7 @@ header a {
 }
 
 header a:hover {
-    color: #fff; /* Brilha em branco ao passar o rato */
+    color: #fff;
 }
 
 /* 
@@ -95,7 +95,7 @@ header a:hover {
 
 .skill-card:hover {
     border-color: #D4AF37;
-    transform: translateY(-5px); /* O card sobe ligeiramente */
+    transform: translateY(-5px);
 }
 
 .skill-card h3 {
@@ -104,11 +104,10 @@ header a:hover {
     color: #fff;
 }
 
-/* Cores Puras de CSS para os Ícones das Marcas */
-.html-color { color: #E34F26; }    /* Laranja oficial do HTML5 */
-.css-color { color: #1572B6; }     /* Azul oficial do CSS3 */
-.python-color { color: #3776AB; }  /* Azul oficial do Python */
-
+/* Cores dos Ícones */
+.html-color { color: #E34F26; }    
+.css-color { color: #1572B6; }     
+.python-color { color: #3776AB; }  
 /* 
    4. SESSÃO PROJETOS
     */
@@ -173,9 +172,8 @@ footer {
     text-decoration: none;
 }
 
-/* Cores dos ícones das redes no rodapé */
-.icones-rodape i.fa-whatsapp { color: #25D366; } /* Verde */
-.icones-rodape i.fa-github { color: #ffffff; }    /* Branco */
+.icones-rodape i.fa-whatsapp { color: #25D366; } 
+.icones-rodape i.fa-github { color: #ffffff; }    
 
 footer p {
     color: #888;
@@ -188,19 +186,22 @@ footer span {
 }
 
 /* 
-   6. RESPONSIVIDADE (PARA TELEMÓVEL)
+   6. RESPONSIVIDADE UNIVERSAL
     */
+@media (max-width: 1024px) {
+    .projetos-container { gap: 15px; }
+    .projeto-card { width: 240px; }
+}
+
 @media (max-width: 768px) {
     header ul {
         flex-direction: column;
         gap: 10px;
     }
-    
     .skills-container, .projetos-container {
         flex-direction: column;
         align-items: center;
     }
-    
     .projeto-card, .skill-card {
         width: 85%;
     }
