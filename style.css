@@ -1,0 +1,207 @@
+/* 
+   CONFIGURAÇÕES GERAIS 
+    */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Fundo escuro */
+    color: #e0e0e0;            /* Texto claro */
+    font-family: sans-serif;
+}
+
+/* 
+   1. MENU (HEADER / NAV)
+    */
+header {
+    background-color: #111;
+    padding: 15px 0;
+    border-bottom: 2px solid #D4AF37; /* Linha dourada elegante */
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header li {
+    margin: 0 20px;
+}
+
+header a {
+    color: #D4AF37; /* Texto dourado */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #fff; /* Brilha em branco ao passar o rato */
+}
+
+/* 
+   2. SESSÃO DE APRESENTAÇÃO
+    */
+.secao-apresentacao {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.secao-apresentacao h1 {
+    color: #D4AF37;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.secao-apresentacao p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 
+   3. SESSÃO SKILLS (HABILIDADES)
+    */
+.secao-skills h2, .secao-projetos h2 {
+    text-align: center;
+    color: #D4AF37;
+    font-size: 32px;
+    margin-top: 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skill-card {
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 120px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: #D4AF37;
+    transform: translateY(-5px); /* O card sobe ligeiramente */
+}
+
+.skill-card h3 {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Cores Puras de CSS para os Ícones das Marcas */
+.html-color { color: #E34F26; }    /* Laranja oficial do HTML5 */
+.css-color { color: #1572B6; }     /* Azul oficial do CSS3 */
+.python-color { color: #3776AB; }  /* Azul oficial do Python */
+
+/* 
+   4. SESSÃO PROJETOS
+    */
+.projetos-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 20px auto 60px auto;
+    padding: 20px;
+}
+
+.projeto-card {
+    background-color: #222;
+    border: 1px solid #D4AF37;
+    border-radius: 10px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.projeto-card h3 {
+    color: #D4AF37;
+    margin-top: 0;
+}
+
+.btn-projeto {
+    display: inline-block;
+    background-color: #D4AF37;
+    color: #111;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn-projeto:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+/* 
+   5. RODAPÉ (FOOTER)
+    */
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #333;
+}
+
+.icones-rodape {
+    margin-bottom: 15px;
+}
+
+.icones-rodape a {
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Cores dos ícones das redes no rodapé */
+.icones-rodape i.fa-whatsapp { color: #25D366; } /* Verde */
+.icones-rodape i.fa-github { color: #ffffff; }    /* Branco */
+
+footer p {
+    color: #888;
+    margin: 5px 0 0 0;
+}
+
+footer span {
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+/* 
+   6. RESPONSIVIDADE (PARA TELEMÓVEL)
+    */
+@media (max-width: 768px) {
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .skills-container, .projetos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projeto-card, .skill-card {
+        width: 85%;
+    }
+}
